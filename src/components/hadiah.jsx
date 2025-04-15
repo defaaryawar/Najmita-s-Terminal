@@ -171,7 +171,7 @@ export default function TerminalRomanticGift() {
       }
       
       // Load lagu dan lirik
-      const success = await loadLRC('/public/lyrics/sempurna.lrc', '/public/music/sempurna.mp3');
+      const success = await loadLRC('/lyrics/sempurna.lrc', '/music/sempurna.mp3');
       if (!success) return [];
       
       setIsPlaying(true);
@@ -195,7 +195,7 @@ export default function TerminalRomanticGift() {
       
       // Start playing audio
       if (!audioRef.current) {
-        audioRef.current = new Audio('/public/music/sempurna.mp3');
+        audioRef.current = new Audio('/music/sempurna.mp3');
       }
       
       audioRef.current.currentTime = 0;
