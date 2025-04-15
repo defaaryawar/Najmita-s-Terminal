@@ -1,0 +1,55 @@
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.terminal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #4ade80 #000;
+}
+
+.terminal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+  background: #000;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+  background-color: #4ade80;
+  border-radius: 4px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.animate-typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end);
+}
+
+.terminal-content {
+  scrollbar-width: thin;
+  scrollbar-color: #4ade80 #111;
+}
+
+.terminal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+  background-color: #4ade80;
+  border-radius: 20px;
+}
